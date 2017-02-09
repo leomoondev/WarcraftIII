@@ -23,9 +23,28 @@
     
     Footman *footman = [[Footman alloc] init];
     
-    _gold = _gold - 135;
-    _food = _food - 2;
+    if ([self canTrainFootman] == TRUE) {
+        _gold = _gold - 135;
+        _food = _food - 2;
+        return footman;
+        
+    }
+    else {
+        return nil;
+    }
+
+}
+
+- (BOOL)canTrainFootman {
     
-    return footman;
+    if((_food >= 2) && (_gold >= 135)) {
+        return true;
+    }
+    else {
+        return false;
+    }    
 }
 @end
+
+
+

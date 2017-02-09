@@ -16,5 +16,6 @@
 @property (assign) int food;
 
 - (Footman *)trainFootman;
+- (BOOL)canTrainFootman;
 
 @end
