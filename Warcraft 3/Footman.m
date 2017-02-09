@@ -11,9 +11,24 @@
 @implementation Footman
 
 -(instancetype)init{
-    _healthPoints = 60;
-    _attackPower = 10;
+    if (self = [super init]) {
+        
+        super.healthPoints = 60;
+        super.attackPower = 10;
+    }
     return self;
+}
+
+- (void)damage:(int)damage{
+    self.healthPoints =  self.healthPoints - damage;
+    
+}
+
+
+- (void)attack:(Unit *)enemy withDamage:(int)damage{
+    
+    enemy.healthPoints = enemy.healthPoints - damage;
+    
 }
 
 @end

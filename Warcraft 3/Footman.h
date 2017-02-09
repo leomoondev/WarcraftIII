@@ -10,7 +10,8 @@
 #import "Unit.h"
 @interface Footman : Unit
 
-@property (assign) int healthPoints;
-@property (assign) int attackPower;
+- (void)damage:(int)damage;
+- (int)healthPoints;
+- (void)attack:(Unit *)enemy withDamage:(int)damage;
 
 @end

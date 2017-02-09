@@ -13,27 +13,16 @@
 - (instancetype)initWithHP:(int)hp AP:(int)ap {
     
     if (self = [super init]) {
-        _newHp = hp;
-        _newAp = ap;
+        _healthPoints = hp;
+        _attackPower = ap;
         
     }
     return self;
     
 }
-- (void)setHealthPoints:(int)hp {
-    
-    _newHp = hp;
-
-}
-
-- (int)healthPoints; {
-    
-    _newHp = 30;
-    
-    return _newHp;
-}
 
 @end
+
 
 
 
