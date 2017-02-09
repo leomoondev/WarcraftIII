@@ -11,7 +11,6 @@
 @interface Footman : Unit
 
 - (void)damage:(int)damage;
-- (int)healthPoints;
 - (void)attack:(Unit *)enemy withDamage:(int)damage;
 
 @end
