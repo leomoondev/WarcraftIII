@@ -10,12 +10,22 @@
 
 @implementation Barracks
 
--(instancetype)init{
-    
-    _gold = 1000;
-    _food = 80;
-    
+- (instancetype)init
+{
+    if (self = [super init]) {
+        _gold = 1000;
+        _food = 80;
+    }
     return self;
 }
 
+- (Footman *)trainFootman {
+    
+    Footman *footman = [[Footman alloc] init];
+    
+    _gold = _gold - 135;
+    _food = _food - 2;
+    
+    return footman;
+}
 @end
