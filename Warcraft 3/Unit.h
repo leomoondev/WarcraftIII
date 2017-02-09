@@ -10,4 +10,11 @@
 
 @interface Unit : NSObject
 
+@property int newHp;
+@property int newAp;
+
+- (instancetype)initWithHP:(int)hp AP:(int)ap;
+- (void)setHealthPoints:(int)hp;
+- (int)healthPoints;
+
 @end

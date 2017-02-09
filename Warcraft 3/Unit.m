@@ -10,4 +10,30 @@
 
 @implementation Unit
 
+- (instancetype)initWithHP:(int)hp AP:(int)ap {
+    
+    if (self = [super init]) {
+        _newHp = hp;
+        _newAp = ap;
+        
+    }
+    return self;
+    
+}
+- (void)setHealthPoints:(int)hp {
+    
+    _newHp = hp;
+
+}
+
+- (int)healthPoints; {
+    
+    _newHp = 30;
+    
+    return _newHp;
+}
+
 @end
+
+
+
